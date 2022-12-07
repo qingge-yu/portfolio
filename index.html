@@ -7,11 +7,200 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maggie Yu</title>
     <link rel="stylesheet" href="main.css">
+    <script defer src="index.js"></script>
 </head>
 
 <body>
-    <main>
-        <h1 class="helloworld">Hello World</h1>
+    <header class="header" role="banner" id="top">
+        <div class="row">
+            <nav class="nav" role="navigation">
+                <ul class="nav__items">
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">Work</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="footer__social-link-item">
+                        <a href="https://github.com/qingge-yu" title="Link to Github Profile">
+                            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+                        </a>
+                    </li>
+                    <li class="footer__social-link-item">
+                        <a href=https://www.linkedin.com/in/maggie-yu-se/">
+                            <img src="./images/linkedin.svg" title="Link to Linkedin Profile"
+                                class="footer__social-image" alt="Linkedin">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__text-box row">
+            <div class="header__text">
+                <h1 class="heading-primary">
+                    <span>Maggie Yu</span>
+                </h1>
+                <p>Software Engineer | Web Developer</p>
+                <a href="#contact" class="btn btn--green">Get in touch</a>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+        <section class="work" id="work">
+            <div class="row">
+                <h2>My Projects</h2>
+                <div class="work__boxes">
+                    <div class="work__box">
+                        <div class="work__text">
+                            <h3>Duetify</h3>
+                            <ul class="work__list">
+                                <li>A Single-Page-Application utilizing React.js</li>
+                                <li>By selecting 2 instruments, the search result suggests duet pieces accordingly</li>
+                                <li>Each detail pagge calls to a YouTube API specific to the duet piece</li>
+                            </ul>
+
+                            <div class="work__links">
+                                <a href="https://duetify.herokuapp.com" target="_blank" class="link__text">
+                                    Visit Site <span>&rarr;</span>
+                                </a>
+                                <a href="https://github.com/qingge-yu/duetify" title="View Source Code" target="_blank">
+                                    <img src="./images/github.svg" class="work__code" alt="GitHub">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="work__image-box">
+                            <img src="./images/project-1.png" class="work__image" alt="Project 1" />
+                        </div>
+                    </div>
+
+                    <div class="work__box">
+                        <div class="work__text">
+                            <h3>SomeTrails</h3>
+                            <ul class="work__list">
+                                <li>A full-stack app with hike planning utility inspired by AllTrails</li>
+                                <li>Data retrieved from National Parks Services</li>
+                                <li>Group project with two team members</li>
+                            </ul>
+
+                            <div class="work__links">
+                                <a href="https://sometrails96.herokuapp.com/" class="link__text">
+                                    Visit Site <span>&rarr;</span>
+                                </a>
+                                <a href="https://github.com/qingge-yu/sometrails">
+                                    <img src="./images/github.svg" class="work__code" title="View Source Code"
+                                        alt="GitHub">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="work__image-box">
+                            <img src="./images/project-2.png" class="work__image" alt="Project 2" />
+                        </div>
+                    </div>
+
+                    <div class="work__box">
+                        <div class="work__text">
+                            <h3>Blackjack</h3>
+                            <ul class="work__list">
+                                <li>An interactive game designed with a betting function</li>
+                                <li>My very first project!</li>
+                            </ul>
+
+                            <div class="work__links">
+                                <a href="https://github.com/qingge-yu/blackjack">
+                                    <img src="./images/github.svg" class="work__code" title="View Source Code"
+                                        alt="GitHub">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="work__image-box">
+                            <img src="./images/project-3.png" class="work__image" alt="Project 3" />
+                        </div>
+                    </div>
+
+                    <div class="work__box">
+                        <div class="work__text">
+                            <h3>Can You Drive Yet?</h3>
+                            <ul class="work__list">
+                                <li>A full-stack app deployed on render</li>
+                                <li>Calculates how long the user should wait till they are safe to operate a vehicle
+                                </li>
+                            </ul>
+
+                            <div class="work__links">
+                                <a href="https://can-you-drive-yet.onrender.com/" class="link__text">
+                                    Visit Site <span>&rarr;</span>
+                                </a>
+                                <a href="https://github.com/qingge-yu/can-you-drive-yet">
+                                    <img src="./images/github.svg" class="work__code" title="View Source Code"
+                                        alt="GitHub">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="work__image-box">
+                            <img src="./images/project-4.png" class="work__image" alt="Project 4" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech" id="tech">
+            <div class="row">
+                <h2>Technologies used</h2>
+                <div class="tech__logos">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" class="tech__logo"
+                        alt="technologies" />
+                    <img src="./images/python-original.svg" class="tech__logo" alt="technologies" />
+                    <img src="./images/javascript-plain.svg" class="tech__logo" alt="technologies" />
+                    <img src="./images/html5.svg" class="tech__logo" alt="technologies" />
+                    <img src="./images/css3-plain.svg" class="tech__logo" alt="technologies" />
+                    <img src="./images/nodejs-plain.svg" class="tech__logo" alt="technologies" />
+                    <img src="./images/express-original.svg" class="tech__logo" alt="technologies" />
+                    <img src="./images/django-plain.svg" class="tech__logo" alt="technologies" />
+                    <img src="./images/postgresql-plain.svg" class="tech__logo" alt="technologies" />
+                    <img src="./images/mongodb-plain.svg" class="tech__logo" alt="technologies" />
+                    <img src="./images/git-original.svg" class="tech__logo" alt="technologies" />
+                    <img src="./images/bootstrap-plain.svg" class="tech__logo" alt="technologies" />
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="row">
+                <h2>About Me</h2>
+                <div class="about__content">
+                    <div class="about__text">
+                        <p>
+                            I am a software engineer based in Los Angeles. I enjoy making my visions of code come to
+                            life. </p>
+                        <p>
+                            I am motivated to make an
+                            impact on society, and each day I grow more appreciative of the ways in which I am able to
+                            create something out of
+                            nothing.
+                        </p>
+                        <a href="https://docs.google.com/document/d/18ZGuW_KBFAwqnumaoQZkD_zUSPF9X1bMbVWTYUbjCtg/"
+                            class="btn">My Resume</a>
+                    </div>
+
+                    <div class="about__photo-container">
+                        <img class="about__photo" src="./images/maggie.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer role="contentinfo" class="footer">
+            <div class="row">
+                <p>Los Angeles, CA</p>
+                <p>maggieqgg@gmail.com</p>
+            </div>
+        </footer>
+
+        <a href="#top" class="back-to-top" title="Back to Top">
+            <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
+        </a>
     </main>
 </body>
 
